@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html>
+  <head>
+    <title>Make your Github/Zenhub boards smoov as...</title>
+    <script src="lib/popup.js"></script>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        color: #ccc;
+        background: #282c34;
+        font-family: Helvetica, sans-serif;
+        font-weight: normal;
+      }
+      .container {
+        margin: 10px;
+        width: 150px;
+      }
+      .button {
+        display: block;
+        margin: 5px 0;
+        padding: 5px 10px;
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+        color: #ccc;
+        background: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+        cursor: pointer;
+        cursor: hand;
+        transition: all 0.2s;
+      }
+      .button:hover {
+        color: #282c34;
+        background: #1ca8dd;
+        border-color: #1ca8dd;
+      }
+      h1 {
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Smoov Boards<h1/>
+      <button class="button"id="theme-light">Light</button>
+      <button class="button" id="theme-grey">Grey</button>
+      <button class="button" id="theme-dark">Dark</button>
+      <button class="button" id="fullscreen">Fullscreen</button>
+      <button class="button" id="close">None</button>
+    </div>
+  </body>
+</html>

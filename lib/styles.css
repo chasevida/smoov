@@ -1,0 +1,204 @@
+
+body.smoov {
+  color: #666;
+  background: #efefef;
+}
+
+body.smoov div::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+:-webkit-full-screen {
+  width: 100%;
+  height: 100%;
+  background: #efefef;
+}
+
+.smoov .header,
+.smoov .pagehead,
+.smoov .zhc-menu-bar,
+.smoov .zhc-filter-tags,
+.smoov .zhc-badge--estimate,
+.smoov .zhc-pipeline-header__actions,
+.smoov .zhc-issue-card__epic,
+.smoov .zhc-pipeline--new-placeholder,
+.smoov .zhc-pipeline__load-more,
+.smoov .zhc-badge--estimate-closed,
+.smoov .zhc-icon--issue-closed-red {
+  display: none;
+}
+
+.smoov .zh-board {
+  margin: 10px;
+  margin: 60px;
+}
+
+.smoov .zhc-pipeline {
+  background: none;
+  border: 0;
+}
+
+.smoov .zhc-pipeline-header {
+  background: none;
+  border: 0;
+}
+
+.smoov .zhc-pipeline-header__view {
+  padding-bottom: 0;
+}
+
+.smoov .zhc-pipeline-header__title {
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.smoov .zhc-pipeline-body {
+  border-top: 3px solid #666;
+}
+
+.smoov .zhc-badge--issue-count {
+  background: none;
+  border-bottom: 0;
+  vertical-align: bottom;
+  font-size: 14px;
+  font-style: italic;
+  color: #999;
+  padding-top: 0px;
+}
+
+.smoov .zhc-badge--issue-count:before {
+   content: "#";
+   font-style: normal;
+}
+
+.smoov .zhc-issue-cards__cell {
+  left: 2px;
+}
+
+.smoov .zhc-issue-card {
+  background: none;
+  border-radius: 0;
+  border: none;
+  border-bottom: 2px solid #999;
+}
+
+.smoov .zhc-issue-card__main,
+.smoov .zhc-issue-card__head,
+.smoov .zhc-issue-card__id {
+  height: 70px;
+}
+
+.zhc-issue-card__details {
+  height: 18px;
+}
+
+.smoov .zhc-issue-card__meta {
+  border-top: 0;
+  padding-left: 36px;
+}
+
+.smoov .zhc-label {
+  color: #999 !important;
+  font-weight: normal;
+  background: none !important;
+  box-shadow: none;
+  border-radius: 0;
+  /*border-bottom: 4px solid;*/
+}
+
+.smoov .zhc-avatar {
+  background: none;
+}
+
+.smoov .zhc-avatar img {
+  filter: grayscale(100%);
+}
+
+.smoov .zhc-issue-card__repo-name {}
+
+.smoov .zhc-issue-card__repo-title {
+  color: #999;
+  text-transform: capitalize;
+  font-weight: normal;
+}
+
+.smoov .zhc-issue-card__issue-number {
+  color: #999;
+  font-style: normal;
+  font-weight: normal;
+  /* font-weight: bold;  maybe */
+}
+
+.smoov .zhc-issue-card__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*
+ * Theme Light
+ */
+body.smoov-theme-light {
+  color: #333;
+  background: #fff;
+}
+
+.smoov-theme-light [role~="main"] {
+  background: #fff;
+}
+
+.smoov-theme-light .zhc-issue-card {
+  border-bottom: 2px solid #efefef;
+}
+
+.smoov-theme-light .zhc-pipeline-body {
+  border-top: 3px solid #333;
+}
+
+/*
+ * Theme Dark
+ */
+body.smoov-theme-dark {
+  color: #ccc;
+  background: #282c34;
+}
+
+.smoov-theme-dark [role~="main"] {
+  background: #282c34;
+}
+
+.smoov-theme-dark .zhc-issue-card {
+  border-bottom: 2px solid #666;
+}
+
+.smoov-theme-dark .zhc-pipeline-body {
+  border-top: 3px solid #ccc;
+}
+
+.smoov-theme-dark .zhc-avatar img {
+  opacity: 0.7;
+}
+
+.smoov-theme-dark .zhc-issue-card__repo-title {
+  font-weight: bold;
+}
+
+.smoov-theme-dark .zhc-issue-card__issue-number {
+  font-weight: bold;
+}

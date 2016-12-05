@@ -1,0 +1,16 @@
+{
+  "name": "SMOOV",
+  "description": "Make your Github/Zenhub boards smoov as...",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "permissions": ["tabs", "https://github.com/*/*/issues*"],
+  "browser_action": {
+    "default_title": "Theme ZenHub.",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["https://github.com/*/*/issues*"],
+    "include_globs":  ["*#boards*"],
+    "css": ["lib/styles.css"]
+  }]
+}
