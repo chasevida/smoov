@@ -9,7 +9,7 @@
     "default_popup": "popup.html"
   },
   "content_scripts": [{
-    "matches": ["https://github.com/*/*/issues*"],
+    "matches": ["https://github.com/*/*"],
     "include_globs":  ["*#boards*"],
     "css": ["lib/styles.css"]
   }]
